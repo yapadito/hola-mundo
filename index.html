@@ -6,6 +6,17 @@
 </head>
 <body>
   <h1>Hola, mundo</h1>
-  <p>Mi primera página publicada. Noche 1 de Taller Ocampo.</p>
+  <p id="mensaje">Mi primera página publicada. Noche 1 de Taller Ocampo.</p>
+  <button id="boton">Haz clic aquí</button>
+
+  <script>
+    const boton = document.getElementById("boton");
+    const mensaje = document.getElementById("mensaje");
+
+    boton.addEventListener("click", function () {
+      mensaje.textContent = "¡Esto ya es JavaScript funcionando! Noche 2 de Taller Ocampo.";
+      mensaje.style.color = "green";
+    });
+  </script>
 </body>
 </html>
